@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rgb x cmyk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>RGB x CMYK: O QUE É?</h1>
+    </header>
+    <main>
+        <section id="olho">
+            <h2>Olho e a Cor</h2>
+            <p><b>O olho humano é Espetacular</b>! Ele capta as cores da natureza através de células especiais chamadas <b>“cones”</b>.
+                Essas células contêm foto-pigmentos que são <b>"ativados”</b> ao serem excitados por certos comprimentos de
+                ondas de luz.</p>
+            <img src=C:\Users\Vagner\Downloads\cb52244be3e0af7bb581bbdaec25fe65ee844040fbd5ddd1be62655b96fc9710.png
+                alt="Ilustração das células cones do olho humano">
+            <p>O olho humano é composto por 3 tipos dessas Células Cones</p>
+            <p>Sendo elas:</p>
+            <ul>
+                <li>os cones R, sensíveis à luz vermelha. Isso significa que eles são ativados quando recebem ondas na
+                    faixa vermelha do espectro eletromagnético <b>(a faixa de comprimento da luz vermelha varia entre 625 e
+                    740 nanômetros)</b>.</li>
+                <li>os cones G, sensíveis à luz verde. Ativados quando recebem ondas na faixa verde <b>(500 a 565
+                    nanômetros)</b>.</li>
+                <li>os cones B, sensíveis à luz azul. Já esses são ativados com as ondas na faixa azul <b>(440 – 485
+                    nanômetros)</b>.</li>
+            </ul>
+            <p><i>Dizer que os cones são “ativados” significa que essas células produzem impulsos elétricos que são
+                enviados ao cérebro, que interpreta essas informações como cores. Os impulsos elétricos gerados por
+                diferentes tipos de cones dão a sensação de outras cores</i>.</p>
+        </section>
+        <section id="pixel-rgb">
+            <h2>O pixel e o RGB</h2>
+            <p>Baseado nessa dinâmica natural do funcionamento do olho humano, foi criado o sistema de cores RGB no
+                pixel.</p>
+            <img src="https://static-blog.render.com.br/wp-content/uploads/2013/03/Pixel-e-sistema-RGB-01.png"
+                alt="Monitor com zoom para ver os pixels na tela">
+            <p>Um pixel é a menor unidade da imagem digital. Quando se juntam formam uma imagem.</p>
+            <p>Mas voltando ao pixel, um simples quadradinho, cada pixel geralmente é formado por 3 subpixels, Sendo eles: <b>O
+                vermelho (R), O verde (G) e O azul (B). Esses subpixels funcionam como lâmpadas coloridas</b>.
+            </p>
+            <p>Quando os subpixels são <b>“acesos”</b> dentro do pixel, a mistura das luzes dos subpixels pode gerar uma cor
+                específica. Por isso chamamos esse método de <b>“aditivo”</b>, porque vamos <b>“adicionando”</b> luz para gerar uma
+                cor diferente. </p>
+            <p>Os subpixels são ativados em diferentes intensidades. Por ser de âmbito digital, cada um deles são
+                representados por bits, ativados em uma faixa de 0 (<b>totalmente desligado</b>) até 255 (<b>totalmente ligado</b>).
+            </p>
+            <section id="tabela-cores">
+                <p>Aqui está uma tabela com as cores e valores teóricos no sistema RGB:</p>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nome da Cor</th>
+                            <th>R</th>
+                            <th>G</th>
+                            <th>B</th>
+                            <th>RGB Completo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="preto">
+                            <td>Preto</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>rgb(0, 0, 0)</td>
+                        </tr>
+                        <tr id="branco">
+                            <td>Branco</td>
+                            <td>255</td>
+                            <td>255</td>
+                            <td>255</td>
+                            <td>rgb(255, 255, 255)</td>
+                        </tr>
+                        <tr id="vermelho">
+                            <td>Vermelho</td>
+                            <td>255</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>rgb(255, 0, 0)</td>
+                        </tr>
+                        <tr id="verde">
+                            <td>Verde</td>
+                            <td>0</td>
+                            <td>255</td>
+                            <td>0</td>
+                            <td>rgb(0, 255, 0)</td>
+                        </tr>
+                        <tr id="azul">
+                            <td>Azul</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>255</td>
+                            <td>rgb(0, 0, 255)</td>
+                        </tr>
+                        <tr id="amarelo">
+                            <td>Amarelo</td>
+                            <td>255</td>
+                            <td>255</td>
+                            <td>0</td>
+                            <td>rgb(255, 255, 0)</td>
+                        </tr>
+                        <tr id="ciano">
+                            <td>Ciano</td>
+                            <td>0</td>
+                            <td>255</td>
+                            <td>255</td>
+                            <td>rgb(0, 255, 255)</td>
+                        </tr>
+                        <tr id="magenta">
+                            <td>Magenta</td>
+                            <td>255</td>
+                            <td>0</td>
+                            <td>255</td>
+                            <td>rgb(255, 0, 255)</td>
+                        </tr>
+                        <tr id="laranja">
+                            <td>Laranja</td>
+                            <td>255</td>
+                            <td>165</td>
+                            <td>0</td>
+                            <td>rgb(255, 165, 0)</td>
+                        </tr>
+                        <tr id="roxo-escuro">
+                            <td>Roxo Escuro</td>
+                            <td>128</td>
+                            <td>0</td>
+                            <td>128</td>
+                            <td>rgb(128, 0, 128)</td>
+                        </tr>
+                        <tr id="azul-claro">
+                            <td>Azul Claro</td>
+                            <td>135</td>
+                            <td>206</td>
+                            <td>250</td>
+                            <td>rgb(135, 206, 250)</td>
+                        </tr>
+                        <tr id="verde-musgo">
+                            <td>Verde Musgo</td>
+                            <td>85</td>
+                            <td>107</td>
+                            <td>47</td>
+                            <td>rgb(85, 107, 47)</td>
+                        </tr>
+                        <tr id="rosa-claro">
+                            <td>Rosa Claro</td>
+                            <td>255</td>
+                            <td>182</td>
+                            <td>193</td>
+                            <td>rgb(255, 182, 193)</td>
+                        </tr>
+                        <tr id="cinza-medio">
+                            <td>Cinza Médio</td>
+                            <td>169</td>
+                            <td>169</td>
+                            <td>169</td>
+                            <td>rgb(169, 169, 169)</td>
+                        </tr>
+                        <tr id="marrom-avermelhado">
+                            <td>Marrom Avermelhado</td>
+                            <td>139</td>
+                            <td>69</td>
+                            <td>19</td>
+                            <td>rgb(139, 69, 19)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <section id="cmyk">
+            <h2>O CMYK</h2>
+            <p><i>Já aprendemos sobre o funcionamento da luz no pixel, mas Você sabia que existe outros métodos também</i>?</p>
+            <p><b>Como o CMYK</b>.</p>
+            <img src="https://www.afixgraf.com.br/wp-content/uploads/2019/01/o-que-e-cmyk-abreviacao.jpg"
+                alt="Representação do sistema CMYK">
+            <p><i>O método de representação de cores por CMYK é utilizado em impressões, tintas e tecidos. lembrando Uma folha em
+                branco não tem pixel! Precisamos misturar pigmentos ao invés de luzes <b>(como no RGB)</b>. Dessa forma estamos
+            <b>"bloqueando"</b> certas cores da luz refletiva. Por isso esse método é chamado de subtrativo</i>.</p>
+            <p><b>CMYK vem de Cyan (a cor ciano), Magenta, Yellow (amarelo) e K pode ser Key ou black. De certa
+                forma, o CMYK tem alguma relação com o sistema RGB da seguinte maneira:</b></p>
+            <ul>
+                <li><b>O ciano absorve o vermelho. Similar ao </b> rgb(0, 255, 255)</li>
+                <li><b>O magenta absorve o verde. Similar ao </b> rgb(255, 0, 255)</li>
+                <li><b>O amarelo absorve o azul. Similar ao </b>rgb(255, 255, 0)</li>
+            </ul>
+            <p><i>Teóricamente, se misturar a mesma quantidade de pigmentos ciano, magenta e amarelo resultaria em preto.
+                No entanto, na prática não é bem assim que funciona: fica um marrom bem escuro, mas ainda não é preto.
+                Para obter um preto intenso, adicionamos a tinta preta. o <b>K</b> representa a tinta preta <b>(“key” ou black)</b></i>.
+            </p>
+        </section>
+        <section id="comparacao">
+            <h2>RGB ou CMYK?</h2>
+            <p>RGB é ideal para telas e dispositivos digitais, como monitores, TVs e celulares.</p>
+            <p>CMYK é utilizado para impressoões, fabricações de tintas e tecidos, como cartazes, adesivos e materiais
+                gráficos.</p>
+            <img src="https://instrucoes.graficacores.com.br/wp-content/uploads/2021/12/Prancheta-3-e1640278270447.png"
+                alt="Comparação entre RGB e CMYK e aplicações">
+        </section>
+    </main>
+    <footer>
+        <p>Referências:</p>
+        <ul>
+            <li>1- <a href="https://lenscope.com.br/blog/cones-e-bastonetes-olhos/">Lenscope - Cones e Bastonetes</a></li>
+            <li>2- <a href="https://brasilescola.uol.com.br/fisica/espectro-eletromagnetico.htm">Brasil Escola - Espectro
+                    Eletromagnético</a></li>
+            <li>3- <a href="https://www.datacolor.com/learn/pt/basics-of-color/">Datacolor - Básicos de Cor</a></li>
+            <li>4- <a href="https://tecnoblog.net/responde/o-que-e-um-pixel/">Tecnoblog - O que é um Pixel?</a></li>
+            <li>5- <a href="https://pt.wikipedia.org/wiki/CMYK">Wikipedia - CMYK</a></li>
+        </ul>
+        <p>Adaptado e Resumido Por: Eduardo Henrique</p>
+        <p>Créditos ao Código Base do Professor Alexandre Peder</p>
+    </footer>
+</body>
+
+</html>
